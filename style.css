@@ -1,0 +1,290 @@
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    border: 2px solid red;
+}
+
+.sectUp{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(246,239,231,1) 5%, rgba(252,247,241,1) 100%);
+    border: 1px solid blue;
+    height: 35vh;
+}
+
+#textPizarra1, #textPizarra2{
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
+.sectDown{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(246,239,231,1) 5%, rgba(252,247,241,1) 100%);
+    border: 1px solid green;
+    padding: 30px;
+}
+
+.downDetails{
+  
+    align-items: center;
+    border: 1px solid rgb(212, 209, 209);
+    width: 30%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(22, 37, 49);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.downGif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(204, 198, 198);
+    width: 65%;
+    background-color: rgb(226, 226, 226);
+
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+.flawless{
+    display: none;
+    background-color: aqua;
+    border-radius: 6px;
+}
+
+#mesage{
+    color: rgb(14, 8, 71);
+    font-size: larger;
+}
+
+button{
+    width: 120px;
+}
+
+
+.izq{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.dere{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btclass{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.start{
+    background-color: rgb(255, 255, 255);
+    color: rgb(81, 81, 219);
+}
+
+.supr{
+    color: black;
+    transition: background-color 1s ease;
+}
+
+.supr:hover{
+    color: blue;
+    
+} 
+
+.blur{
+    filter: blur(4px);
+    
+}
+
+.invert{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+h1{
+    color: rgb(107, 107, 107);
+    
+}
+
+@media (min-width:414px) and (max-width:980px)  {
+    .sectUp{
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .izq{
+        align-items: center;
+        
+    }
+    .contCenter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btclass{
+        margin-bottom: 30px;
+    }
+    .btn-display{
+        width: 90px;
+    }
+
+    .sectDown{
+        flex-direction: column;
+    }
+
+    .downDetails{
+        width: 100%;
+    }
+
+    .downGif{
+        width: 100%;
+        background-color: transparent;
+    }
+   
+    .imgGif{
+        width: 320px;
+    }
+}
+
+@media (min-width:359px) and (max-width:413px)  {
+
+    .tipografiaLogo{
+        font-size: large;
+        font-weight: 500;
+    }
+    .sectUp{
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .izq{
+        align-items: center;
+        
+    }
+
+    button{
+        width: 99px;
+    }
+
+    .btclass{
+     
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    .contCenter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btclass{
+        margin-bottom: 30px;
+    }
+    .btn-display{
+        width: 90px;
+    }
+
+    .sectDown{
+        flex-direction: column;
+    }
+
+    .downDetails{
+        width: 100%;
+    }
+    .downGif{
+        width: 100%;
+        background-color: transparent;
+   }
+   .imgGif{
+    width: 240px;
+    }
+}
+
+@media (min-width:280px) and (max-width:358px)  {
+
+    .tipografiaLogo{
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    #position{
+        display: none;
+    }
+    .sectUp{
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .izq{
+        align-items: center;
+        
+    }
+
+    .dere{
+        border: 1px solid red;
+        padding: 0;
+    }
+
+    button{
+        width: 80px;
+    }
+
+    .btclass{
+     
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    .contCenter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btclass{
+        margin-bottom: 30px;
+    }
+    .btn-display{
+        width: 80px;
+    }
+    .sectDown{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .wFind, .wnFind{
+        font-size: medium;
+    }
+
+    .downDetails{
+        width: 100%;
+    
+    }
+    .downGif{
+        width: 100%;
+        background-color: transparent;
+   }
+   .imgGif{
+    width: 220px;
+    }
+}
