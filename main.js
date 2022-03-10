@@ -20,7 +20,7 @@ let list8 = list[7].value = 'piscina'
 let list9 = list[7].value = 'tienda'
 let list10 = list[9].value = 'bebe'
 let list11 = list[10].value = 'ropa'
-let list12 = list[11].value = 'dulces'
+let list12 = list[11].value = 'dulce'
 
 
 /* -----por defecto al iniciar configura el juego con su primer nivel easy ----- */
