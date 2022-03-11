@@ -1,6 +1,6 @@
 
 import {uno, tres, list, renew, spanFound, spanNoFound, linkEasy, linkMedium, linkHard, 
-position, supr, seeToggle,textPizarra1,textPizarra2,pizzToggle, indicator} from "./sourse.js"
+position, supr, seeToggle,textPizarra1,textPizarra2,pizzToggle, indicator, levelMenu} from "./sourse.js"
 
 const arr = [];
 const arr1 = [];
@@ -30,11 +30,11 @@ window.onload = ()=> {
  level = 4
  numIndice = level
  indicator.innerHTML = numIndice;
- 
+ linkEasy.classList.add('linked');
 
     setTimeout(()=>{
         uno.classList.remove('start')
-    }, 1000);
+    }, 1300);
 
    
 };
@@ -46,6 +46,9 @@ linkEasy.addEventListener('click', ()=>{
     level = 4
     numIndice = level
     indicator.innerHTML = numIndice;
+    linkEasy.classList.add('linked');
+    linkMedium.classList.remove('linked');
+    linkHard.classList.remove('linked');
 
 });
 
@@ -54,8 +57,9 @@ linkMedium.addEventListener('click', ()=>{
     level = 8
     numIndice = level
     indicator.innerHTML = numIndice;
-    linkEasy.classList.add('disabled');
-
+    linkMedium.classList.add('linked');
+    linkEasy.classList.remove('linked');
+    linkHard.classList.remove('linked');
 });
 
 linkHard.addEventListener('click', ()=>{
@@ -63,8 +67,10 @@ linkHard.addEventListener('click', ()=>{
     level = 12
     numIndice = level
     indicator.innerHTML = numIndice;
-    linkEasy.classList.add('disabled');
-    linkMedium.classList.add('disabled');
+    linkEasy.classList.remove('linked');
+    linkMedium.classList.remove('linked');
+    linkHard.classList.add('linked');
+
 });
 
 /* ------------------------------ */
@@ -77,7 +83,7 @@ uno.addEventListener('click', ()=>{
         tres.classList.replace('enabled','disabled');
         renew.classList.replace('enabled','disabled')
         
-
+        levelMenu.classList.add('disabled');
 
     }
 
@@ -136,6 +142,7 @@ renew.addEventListener('click' , ()=>{
 
     document.querySelector('.flawless').style = "display : none"; 
     document.querySelector('#mesage').style = "display : none"
+    levelMenu.classList.remove('disabled');
 
 })
 

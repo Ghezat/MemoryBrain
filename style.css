@@ -17,6 +17,10 @@ header{
     color: black;
 }
 
+.linked{
+    color: blue;
+}
+
 .sectUp{
     display: flex;
     justify-content: space-around;
@@ -102,6 +106,16 @@ button{
     color: rgb(81, 81, 219);
 }
 
+.darkLight{
+    color: black;
+    transition: background-color 1s ease;
+}
+
+.darkLight>:hover{
+    color: blue;
+   
+}
+
 .supr{
     color: black;
     transition: background-color 1s ease;
@@ -111,6 +125,15 @@ button{
     color: blue;
     
 } 
+
+.look{
+    color: black;
+    transition: background-color 1s ease;
+}
+
+.look:hover{
+    color: blue;
+}   
 
 .blur{
     filter: blur(4px);
