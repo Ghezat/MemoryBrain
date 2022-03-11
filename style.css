@@ -7,6 +7,16 @@ header{
     border: 2px solid red;
 }
 
+.ucraniaBlue{
+    background-color: #005bbb;
+    color: white;
+}
+
+.ucraniaYellow{
+    background-color: #ffd500;
+    color: black;
+}
+
 .sectUp{
     display: flex;
     justify-content: space-around;
@@ -119,6 +129,9 @@ h1{
 }
 
 @media (min-width:414px) and (max-width:980px)  {
+
+    
+
     .sectUp{
         flex-direction: column;
         height: auto;
@@ -240,7 +253,6 @@ h1{
     }
 
     .dere{
-        border: 1px solid red;
         padding: 0;
     }
 
